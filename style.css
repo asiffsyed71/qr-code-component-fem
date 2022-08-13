@@ -1,0 +1,77 @@
+:root {
+    --clr-accent-100: hsl(212, 45%, 89%);
+    --clr-accent-400: hsl(220, 15%, 55%);
+    --clr-accent-900: hsl(218, 44%, 22%);
+    --clr-neutral-900: hsl(0, 0%, 100%);
+    --ff-primary: 'Outfit', sans-serif;
+    --fw-regular: 400;
+    --fw-bold: 700;
+    --fs-primary: 1rem;
+}
+
+/* reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+/* Inherit fonts */
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+/* basic design */
+
+body {
+    height: 100vh;
+    background-color: var(--clr-accent-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fs-primary);
+    font-weight: var(--fw-regular);
+}
+
+.container {
+    min-width: 20rem;
+    background-color: var(--clr-neutral-900);
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: space-around;
+    box-shadow: 0 0 0.8rem 0 var(--clr-accent-400);
+}
+
+.container img {
+    border-radius: 0.8rem;
+    width: 100%;
+    max-width: 18rem;
+}
+
+.container .text-primary,
+.container .text-secondary
+{   
+    font-family: var(--ff-primary);
+    max-width: 18rem;
+    text-align: center;
+}
+
+.container .text-primary {
+    font-weight: var(--fw-bold);
+    font-size: 1.5rem;
+}
+
+.container .text-secondary
+{
+    opacity: 0.5;
+    margin-bottom: 1rem;
+}
